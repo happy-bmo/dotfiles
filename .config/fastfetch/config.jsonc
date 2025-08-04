@@ -1,0 +1,81 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo":{
+    "type": "small",
+    "color": {"1": "blue"},
+    "padding": {
+      "top": 1,
+      "left": 3
+    }
+  },
+  "display": {
+    "separator": ""
+  },
+
+  "modules": [
+  {     
+    "type": "custom",
+    "key": "{#90}╭ Keys ───────╮",
+    "format": "{#90}╭ Values ────────────────────────────────────────────────────╮"
+  },
+  {
+    "type": "kernel",
+    "key": "{#90}│    {#91}Kernel   {#90}││ ",
+    "format": "{#91}{sysname} {#90}                          │"
+  },
+
+  {
+    "type": "cpu",
+    "key": "{#90}│     {#93}CPU     {#90}│",
+    "showPeCoreCount": true,
+    "temp": true,
+    "format": "{#90}│ {#93}{name}      {#90}│"
+  },
+
+  {
+    "type": "memory",
+    "format": "[{3}] {1} / {2}        {#90}│",
+    "key": "{#90}│     {#94}RAM     {#90}││ "
+  },
+  {
+    "type": "swap",
+    "format": "[{3}] {1} / {2}                  {#90}│",
+    "key": "{#90}│     {#89}SWAP    {#90}││ "
+  },
+  {
+    "type": "disk",
+    "format": "[{3}] {1} / {2} {9} {#90}│",
+    "key": "{#90}│     {#67}Disk    {#90}││ ",
+    "keyColor": "magenta"
+  },
+  {
+    "type": "battery",
+    "format": "[{4}] {5}               {#90}│",
+    "key": "{#90}│    {#92}Battery  {#90}││ "
+  }, 
+  {
+    "type": "packages",
+    "key": "│   Packages  ││ ",
+    "format": "{1} (pacman)                    {#90}│"
+  },
+  {
+    "type": "localip",
+    "outputColor": "white",
+    "key": "{#90}│   {#90}Local IP  {#90}││ ",
+    "keyColor": "green",
+    "showIpv4": true,
+    "showIpv6": false,
+    "format": "{ifname}: {ipv4}       {#90}│"
+  },
+  {
+    "type": "custom",
+    "key": "{#90}╰─────────────╯",
+    "format": "{#90}╰────────────────────────────────────────────────────────────╯"
+  },
+  "break",
+  {
+    "type": "colors",
+    "paddingLeft": 24,
+    "symbol": "circle"
+  }
+]}

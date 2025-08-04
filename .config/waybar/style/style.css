@@ -1,0 +1,176 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(21, 18, 27, 0);
+  color: #1a1a1a;
+}
+
+tooltip {
+  background: #2a3b2d;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+tooltip label {
+  padding: 0 8px;
+  color: #E6F1F5;
+}
+
+#custom-lock_screen,
+#custom-power_btn,
+#custom-power_profile,
+#custom-weather,
+#custom-updates,
+#cpu,
+#disk,
+#window,
+#custom-launch_wofi,
+#memory,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#temperature,
+#custom-light_dark,
+#tray,
+#backlight {
+  background-color: #798645;
+  border-radius: 20px;
+  opacity: 0.8;
+  padding: 0px 16px;
+  margin: 3px 5px;
+  margin-top: 10px;
+  border: 0px;
+}
+
+
+#custom-light_dark,
+#tray {
+  background-color: transparent;
+  padding: 0px 13px;
+  margin: 3px 0px;
+  margin-top: 10px;
+}
+
+/* #tray, */
+/* #custom-lock_screen, */
+/* #temperature, */
+/* #backlight, */
+/* #custom-launch_wofi, */
+/* #cpu { */
+/*   border-radius: 10px 0px 0px 10px; */
+/* } */
+/**/
+/**/
+/* #custom-light_dark, */
+/* #custom-power_btn, */
+/* #workspaces, */
+/* #pulseaudio.microphone, */
+/* #battery, */
+/* #disk { */
+/*   border-radius: 0px 10px 10px 0px; */
+/*   margin-right: 10px; */
+/* } */
+
+#workspaces {
+  padding: 0;
+}
+
+#workspaces button {
+  margin: 0;
+  font-size: 10px;
+  padding: 0 10px;
+  color: #333333;
+  background-color: transparent;
+}
+
+#workspaces button.active {
+  background-color: #7a8f5a;
+  border-radius: 10px;
+  color: #1a1a1a;
+}
+
+#workspaces button.focused {
+  color: #a6adc8;
+  background: #eba0ac;
+  border-radius: 10px;
+}
+
+#workspaces button.urgent {
+  color: #11111b;
+  background: #a6e3a1;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+  background: #335522;
+  color: #E6F1F5;
+  border-radius: 5px;
+}
+
+#workspaces button:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#workspaces button:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#temperature.critical {
+  color: #e92d4d;
+}
+
+#custom-power_profile {
+  color: #a6e3a1;
+}
+
+#window {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#custom-launch_wofi {
+  color: #1793D1;
+  margin-left: 10px;
+  padding: 0 15px 0 10px;
+  border-right: 0px;
+}
+
+#pulseaudio {
+  color: #55AD9B;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#pulseaudio.microphone {
+  color: #cba6f7;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#battery {
+  color: #365E32;
+  border-left: 0px;
+}
+
+#battery.warning {
+  color: #FFC145;
+}
+
+#battery.critical {
+  color: #e92d4d;
+}
+
+#backlight {
+  color: #FF9D23;
+}

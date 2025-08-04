@@ -1,0 +1,5 @@
+#Chromium cache
+.config/chromium
+
+#Yay cache
+#.config/yay
