@@ -4,7 +4,6 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 map("n", "<C-a>", "gg<S-v>G")
@@ -18,20 +17,13 @@ map("n", "wh", ":split<CR>", opts)
 map("n", "wv", ":vsplit<CR>", opts)
 
 -- Diagnostics
-map("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
-end, opts)
+map("n", "<C-j>", vim.diagnostic.goto_next, opts)
 
 -- Tabs
 map("n", "te", ":tabedit<CR>", opts)
 map("n", "<tab>", ":tabnext<CR>", opts)
 map("n", "<S-tab>", ":tabprev<CR>", opts)
 map("n", "tc", ":tabclose<CR>", opts)
-
-map("n", "<C-c>", ":w !xclip -selection clipboard<CR><CR>", opts)
-map("v", "<C-c>", ":w !xclip -selection clipboard<CR><CR>", opts)
-map("n", "<C-v>", ":r !xclip -selection clipboard -o<CR>", opts)
-map("v", "<C-v>", ":w !xclip -selection clipboard<CR><CR>", opts)
 
 -- Buffer
 map("n", "bd", ":bd<CR>", opts)

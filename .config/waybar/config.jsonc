@@ -5,6 +5,7 @@
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
+  "swap-icon-label": true,
   "height": 40,
   "modules-left": [
     "custom/launch_wofi",
